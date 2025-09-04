@@ -1,0 +1,267 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Shishir Pandey — Aesthetic Portfolio</title>
+  <link rel="icon" href="logo.png" />
+  <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet" href="index.css" />
+  <link rel="stylesheet" href="bio.css" />
+  <link rel="stylesheet" href="address.css" />
+  <link rel="stylesheet" href="family.css" />
+  <link rel="stylesheet" href="gallery.css" />
+</head>
+<body>
+  <div id="app" class="theme-light">
+    <!-- Top animated 3D-ish background canvas (fallback CSS) -->
+    <div id="bg-3d"></div>
+
+    <!-- Header / Hero -->
+    <header class="hero">
+      <div class="banner">
+        <img class="banner-img" src="banner.jpg" alt="banner"/>
+        <div class="logo-wrap">
+          <img class="logo" src="logo.png" alt="logo" />
+        </div>
+      </div>
+
+      <div class="hero-content">
+        <img class="head-photo" src="headshot.jpg" alt="Shishir Pandey" />
+        <h1 id="rainbow-heading" class="rainbow-heading">Shishir Pandey</h1>
+        <p class="sub">Thanks for visiting.</p>
+
+        <div class="one-word-rotator" aria-hidden="true"></div>
+
+        <div class="cta-row">
+          <a class="btn" href="#bio">Read about me</a>
+          <a class="btn ghost" href="#gallery">Gallery</a>
+        </div>
+
+        <div class="socials">
+          <a class="social pill" href="https://www.instagram.com/shishirpnde" target="_blank">Instagram</a>
+          <a class="social pill" href="https://www.shishirp.com.np" target="_blank">Website</a>
+          <a class="social pill" href="mailto:be7ccrp@gmail.com">Email</a>
+        </div>
+      </div>
+
+      <div class="theme-toggle">
+        <label class="switch">
+          <input id="themeSwitch" type="checkbox">
+          <span class="slider"></span>
+        </label>
+      </div>
+    </header>
+
+    <!-- NAV -->
+    <nav class="nav">
+      <a href="#bio">Bio</a>
+      <a href="#family">Family</a>
+      <a href="#address">Address</a>
+      <a href="#education">Education</a>
+      <a href="#projects">Projects</a>
+      <a href="#gallery">Gallery</a>
+    </nav>
+
+    <!-- MAIN -->
+    <main>
+      <!-- BIO SECTION -->
+      <section id="bio" class="panel bio-panel">
+        <!-- bio content and live age counter -->
+        <div class="bio-left">
+          <h2 class="rainbow-heading small">About Me</h2>
+          <p class="lead">Hello — I'm <strong>Shishir Pandey</strong>. Below is my complete biography and details.</p>
+
+          <ul class="bio-list">
+            <li><strong>Name:</strong> Shishir Pandey</li>
+            <li><strong>Date of birth (BS):</strong> 2061-07-07 BS</li>
+            <li><strong>Date of birth (AD):</strong> 2004-10-23</li>
+            <li><strong>Email:</strong> be7ccrp@gmail.com</li>
+            <li><strong>Website:</strong> www.shishirp.com.np</li>
+            <li><strong>Instagram:</strong> @shishirpnde</li>
+          </ul>
+
+          <div id="live-age" class="card age-card">
+            <h3>Live age counter</h3>
+            <div id="age-values" class="age-values">
+              <div class="age-item"><span id="years">0</span><small>Years</small></div>
+              <div class="age-item"><span id="months">0</span><small>Months</small></div>
+              <div class="age-item"><span id="days">0</span><small>Days</small></div>
+              <div class="age-item"><span id="hours">0</span><small>Hours</small></div>
+              <div class="age-item"><span id="minutes">0</span><small>Minutes</small></div>
+              <div class="age-item"><span id="seconds">0</span><small>Seconds</small></div>
+            </div>
+            <div class="age-summary" id="age-summary">
+              <p><strong>Total minutes:</strong> <span id="total-minutes">0</span></p>
+              <p><strong>Total hours:</strong> <span id="total-hours">0</span></p>
+              <p><strong>Total days:</strong> <span id="total-days">0</span></p>
+              <p><strong>Total seconds:</strong> <span id="total-seconds">0</span></p>
+            </div>
+          </div>
+
+        </div>
+
+        <div class="bio-right">
+          <div class="bio-3d">
+            <!-- 3D-ish animated background placeholder; script.js enhances it -->
+          </div>
+
+          <div class="bio-text-panel">
+            <h3>My Lifestyle</h3>
+            <p class="story">A flowing paragraph describing lifestyle, education, skills, interests and experience — animated with subtle entrance transitions. This paragraph is repeated in each section with more detail in single pages.</p>
+
+            <div class="skills-flow">
+              <span class="skill">Reading</span>
+              <span class="skill">Exploring</span>
+              <span class="skill">Audit</span>
+              <span class="skill">Tally</span>
+              <span class="skill">Excel</span>
+            </div>
+
+          </div>
+        </div>
+      </section>
+
+      <!-- FAMILY SECTION -->
+      <section id="family" class="panel family-panel">
+        <h2 class="rainbow-heading small">Family</h2>
+        <div class="family-tree">
+          <!-- left-right vertical layout -->
+          <div class="family-column left">
+            <div class="family-card" data-member="father">
+              <img src="father.jpg" alt="Father"/>
+              <h4>Father</h4>
+              <p class="mini">Born: <span>...</span></p>
+              <button class="open-detail">Open</button>
+              <div class="detail hidden">
+                <p>Name: (father name)</p>
+                <p>Work: (father work)</p>
+                <p>Bio: ...</p>
+              </div>
+            </div>
+
+            <div class="family-card" data-member="me">
+              <img src="me.jpg" alt="Me"/>
+              <h4>Me</h4>
+              <button class="open-detail">Open</button>
+              <div class="detail hidden">
+                <p>My biography details here.</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="family-column right">
+            <div class="family-card" data-member="mother">
+              <img src="mother.jpg" alt="Mother"/>
+              <h4>Mother</h4>
+              <button class="open-detail">Open</button>
+              <div class="detail hidden">
+                <p>Name: (mother name)</p>
+                <p>Work: (mother work)</p>
+              </div>
+            </div>
+
+            <div class="family-card" data-member="sibling">
+              <img src="sister.jpg" alt="Sister"/>
+              <h4>Sister</h4>
+              <button class="open-detail">Open</button>
+              <div class="detail hidden">
+                <p>Details...</p>
+              </div>
+            </div>
+
+            <div class="family-card" data-member="brother">
+              <img src="brother.jpg" alt="Brother"/>
+              <h4>Brother</h4>
+              <button class="open-detail">Open</button>
+              <div class="detail hidden">
+                <p>Details...</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- ADDRESS SECTION -->
+      <section id="address" class="panel address-panel">
+        <h2 class="rainbow-heading small">Places</h2>
+        <div class="places">
+          <div class="place-card">
+            <h4>Birth place</h4>
+            <p>Palpa, Tension, Syangja</p>
+            <img src="palpa.jpg" alt="Palpa"/>
+            <a class="map-link" href="https://www.google.com/maps" target="_blank">View on map</a>
+          </div>
+
+          <div class="place-card">
+            <h4>Home Town</h4>
+            <p>Kaligandaki Harmichour, Gulmi</p>
+            <img src="harmichour.jpg" alt="Harmichour"/>
+            <a class="map-link" href="https://www.google.com/maps" target="_blank">View on map</a>
+          </div>
+
+          <div class="place-card">
+            <h4>Currently</h4>
+            <p>Butwal</p>
+            <img src="butwal.jpg" alt="Butwal"/>
+            <a class="map-link" href="https://www.google.com/maps" target="_blank">View on map</a>
+          </div>
+        </div>
+      </section>
+
+      <!-- EDUCATION -->
+      <section id="education" class="panel education-panel">
+        <h2 class="rainbow-heading small">Education</h2>
+        <div class="education-grid">
+          <div class="edu-card">
+            <h4>SLC (SEE)</h4>
+            <p>GPA: 3.70 — Optional: Math & Account — Passed year: 2076</p>
+          </div>
+          <div class="edu-card">
+            <h4>+2 (HSC)</h4>
+            <p>GPA: 3.08 — Account & Business Study — Passed year: 2081</p>
+          </div>
+        </div>
+      </section>
+
+      <!-- PROJECTS -->
+      <section id="projects" class="panel projects-panel">
+        <h2 class="rainbow-heading small">Projects</h2>
+        <div class="projects-flow">
+          <!-- clickable continuously scrolling projects -->
+          <div class="project-track" id="projectTrack">
+            <a class="project-item" href="#">Audit dashboard</a>
+            <a class="project-item" href="#">Tally Work</a>
+            <a class="project-item" href="#">Excel Audit File</a>
+            <a class="project-item" href="#">Other Project</a>
+          </div>
+        </div>
+      </section>
+
+      <!-- GALLERY -->
+      <section id="gallery" class="panel gallery-panel">
+        <h2 class="rainbow-heading small">Gallery</h2>
+        <div class="gallery-grid" id="galleryGrid">
+          <!-- thumbnails auto-fill from gallery.js -->
+        </div>
+
+        <div id="lightbox" class="lightbox hidden">
+          <button id="lightboxClose">×</button>
+          <img id="lightboxImg" src="" alt=""/>
+        </div>
+      </section>
+
+    </main>
+
+    <footer class="footer">
+      <p>© <span id="year">2025</span> Shishir Pandey — Lovely aesthetic portfolio</p>
+    </footer>
+  </div>
+
+  <script src="script.js"></script>
+  <script src="bio.js"></script>
+  <script src="family.js"></script>
+  <script src="address.js"></script>
+  <script src="gallery.js"></script>
+</body>
+  </html>
