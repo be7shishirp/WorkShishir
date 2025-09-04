@@ -1,0 +1,6 @@
+/* index-specific styles and extra animations */
+.hero-content{animation:hero-entrance .9s ease both}
+@keyframes hero-entrance{from{opacity:0;transform:translateY(20px)}to{opacity:1;transform:none}}
+.one-word-rotator{font-size:22px}
+.one-word-rotator .word{display:inline-block;opacity:0;transform:translateY(8px);animation:wordIn 3s infinite}
+@keyframes wordIn{0%{opacity:0;transform:translateY(6px)}10%{opacity:1;transform:none}30%{opacity:1}40%{opacity:0;transform:translateY(-6px)}100%{opacity:0}}
