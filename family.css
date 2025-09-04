@@ -1,0 +1,4 @@
+.family-card{cursor:pointer}
+.family-card .detail{max-height:0;overflow:hidden;transition:max-height .35s ease;padding:0}
+.family-card.expanded .detail{max-height:240px;padding:12px}
+.family-card .open-detail{background:transparent;border:1px solid rgba(255,255,255,0.06);padding:8px;border-radius:8px}
