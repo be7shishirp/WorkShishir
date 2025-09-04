@@ -1,0 +1,2 @@
+.gallery-grid .thumb{cursor:pointer;border-radius:8px;transition:transform .18s}
+.gallery-grid .thumb:hover{transform:translateY(-6px) scale(1.02)}
